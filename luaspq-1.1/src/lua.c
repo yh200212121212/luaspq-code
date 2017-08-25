@@ -1,3 +1,4 @@
+
 /*
 ** $Id: lua.c,v 1.226 2015/08/14 19:11:20 roberto Exp $
 ** Lua stand-alone interpreter
@@ -148,7 +149,14 @@ static void print_usage (const char *badoption) {
   progname);
 }
 
-
+static void deal()
+{
+	fprintf(stdout, "Compile time:");
+	fprintf(stdout, __DATE__);
+	fprintf(stdout, " ");
+	fprintf(stdout, __TIME__);
+	fprintf(stdout, "\n");
+}
 /*
 ** Prints an error message, adding the program name in front of it
 ** (if present)
@@ -597,9 +605,10 @@ int main (int argc, char **argv) {
 #ifdef _WINDOWS
 	HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 	// Set the new color  
-	SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_INTENSITY | BACKGROUND_BLUE);
+	SetConsoleTextAttribute(h,FOREGROUND_INTENSITY | BACKGROUND_BLUE);
 #endif
-	fprintf_s(stdout, "Type help() to show the functions' help.\n Type des() or description() to display the description about the software. \n");
+	deal();
+	fprintf(stdout, "Type help() to show the functions' help.\n Type des() or description() to display the description about the software. \n");
   int status, result;
   lua_State *L = luaL_newstate();  /* create state */
   if (L == NULL) {
