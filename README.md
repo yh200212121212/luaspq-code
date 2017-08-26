@@ -1,2 +1,2 @@
 # luaspq-code
-The code of language luaspq which based on lua.
+This is Luaspq 1.1.1, released on 26 Aug 2017.
