@@ -319,13 +319,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="F:\0\luaspq-1.1\luaspq-1.1\src\lua.c" />
     <ResourceCompile Include="F:\0\luaspq-1.1\luaspq-1.1\src\lua.rc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:/0/luaspq-1.1/luaspq-1.13/project/liblua.vcxproj">
       <Project>879386B3-3008-34EF-AA4E-64A47EBD30AC</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\luaspq-1.1\src\lua.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
