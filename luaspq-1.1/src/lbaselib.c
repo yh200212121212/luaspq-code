@@ -523,7 +523,7 @@ static const luaL_Reg base_funcs[] = {
 	{ "ztest", luaB_ztest },
 	/* placeholders */
 	{ "_G", NULL },
-	{ "_VERSION", NULL },
+	//{ "_VERSION", NULL },
 	{ NULL, NULL }
 };
 
@@ -535,8 +535,8 @@ LUAMOD_API int luaopen_base (lua_State *L) {
   lua_pushvalue(L, -1);
   lua_setfield(L, -2, "_G");
   /* set global _VERSION */
-  lua_pushliteral(L, LUA_VERSION);
-  lua_setfield(L, -2, "_VERSION");
+  //lua_pushliteral(L, LUA_VERSION);
+  //lua_setfield(L, -2, "_VERSION");
   return 1;
 }
 typedef struct luaL_FuncNameNotePair {
