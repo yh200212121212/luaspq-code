@@ -4,7 +4,7 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-project ( lua C )
+project ( luaspq C )
 cmake_minimum_required ( VERSION 2.8 )
 include ( cmake/dist.cmake )
 
@@ -95,7 +95,7 @@ configure_file ( src/luaconf.h.in ${CMAKE_CURRENT_BINARY_DIR}/luaconf.h )
 include_directories ( src ${CMAKE_CURRENT_BINARY_DIR} )
 set ( SRC_CORE src/lapi.c src/lcode.c src/lctype.c src/ldebug.c src/ldo.c src/ldump.c
   src/lfunc.c src/lgc.c src/llex.c src/lmem.c src/lobject.c src/lopcodes.c src/lparser.c
-  src/lstate.c src/lstring.c src/ltable.c src/ltm.c src/lundump.c src/lvm.c src/lzio.c )
+  src/lstate.c src/lstring.c src/ltable.c src/ltm.c src/lundump.c src/lvm.c src/lzio.c src/lmathlibc.c src/lmathlibc.h)
 set ( SRC_LIB src/lauxlib.c src/lbaselib.c src/lbitlib.c src/lcorolib.c src/ldblib.c
   src/liolib.c src/lmathlib.c src/loslib.c src/lstrlib.c src/ltablib.c src/linit.c
   src/lutf8lib.c )
@@ -111,31 +111,30 @@ endif ( )
 
 ## BUILD
 # Create lua library
-add_library ( liblua ${SRC_CORE} ${SRC_LIB} ${LUA_DLL_RC} )
-target_link_libraries ( liblua ${LIBS} )
-set_target_properties ( liblua PROPERTIES OUTPUT_NAME lua CLEAN_DIRECT_OUTPUT 1 )
+add_library ( libluaspq ${SRC_CORE} ${SRC_LIB} ${LUA_DLL_RC} )
+target_link_libraries ( libluaspq ${LIBS} )
+set_target_properties ( libluaspq PROPERTIES OUTPUT_NAME lua CLEAN_DIRECT_OUTPUT 1 )
 if ( LUA_BUILD_AS_DLL )
-  set_target_properties ( liblua PROPERTIES COMPILE_DEFINITIONS LUA_BUILD_AS_DLL )
+  set_target_properties ( libluaspq PROPERTIES COMPILE_DEFINITIONS LUA_BUILD_AS_DLL )
 endif ()
 
-add_executable ( lua ${SRC_LUA} src/lua.rc )
-target_link_libraries ( lua liblua )
+add_executable ( luaspq ${SRC_LUA} src/lua.rc )
+target_link_libraries ( luaspq libluaspq )
 
-add_executable ( luac ${SRC_CORE} ${SRC_LIB} ${SRC_LUAC} src/luac.rc )
-target_link_libraries ( luac ${LIBS} )
+add_executable ( luacspq ${SRC_CORE} ${SRC_LIB} ${SRC_LUAC} src/luac.rc )
+target_link_libraries ( luacspq ${LIBS} )
 
 # On windows a variant of the lua interpreter without console output needs to be built
 if ( LUA_BUILD_WLUA )
-  add_executable ( wlua WIN32 src/wmain.c ${SRC_LUA} src/lua.rc )
-  target_link_libraries ( wlua liblua )
-  install_executable ( wlua )
+  add_executable ( wluaspq WIN32 src/wmain.c ${SRC_LUA} src/lua.rc )
+  target_link_libraries ( wluaspq libluaspq )
+  install_executable ( wluaspq )
 endif ( )
 
-install_executable ( lua luac )
-install_library ( liblua )
-install_data ( README.md )
+install_executable ( luaspq luacspq )
+install_library ( libluaspq )
+#install_data ( README.md )
 #install_lua_module ( strict etc/strict.lua )
 install_header ( src/lua.h src/lualib.h src/lauxlib.h src/lua.hpp ${CMAKE_CURRENT_BINARY_DIR}/luaconf.h )
-install_doc ( doc/ )
 install_foo ( etc/ )
 #install_test ( test/ )

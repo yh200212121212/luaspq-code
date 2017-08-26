@@ -1,0 +1,8 @@
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/libluaspq.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/PACKAGE.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/wluaspq.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/luaspq.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/luacspq.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/INSTALL.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/ALL_BUILD.dir
+F:/0/luaspq-1.1/luaspq-1.1/project64/CMakeFiles/ZERO_CHECK.dir

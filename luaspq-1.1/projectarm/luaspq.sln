@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libluaspq", "libluaspq.vcxproj", "{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luacspq", "luacspq.vcxproj", "{374DE35F-02C7-3A25-ADE0-17626DA35CB9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luaspq", "luaspq.vcxproj", "{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556} = {5A288A1F-13C1-3FCE-A6D6-25B9261E5556}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wluaspq", "wluaspq.vcxproj", "{EC4B730C-1233-3381-9643-74F398CECE68}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556} = {5A288A1F-13C1-3FCE-A6D6-25B9261E5556}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		MinSizeRel|ARM = MinSizeRel|ARM
+		Release|ARM = Release|ARM
+		RelWithDebInfo|ARM = RelWithDebInfo|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.Debug|ARM.ActiveCfg = Debug|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.Debug|ARM.Build.0 = Debug|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.MinSizeRel|ARM.ActiveCfg = MinSizeRel|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.MinSizeRel|ARM.Build.0 = MinSizeRel|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.Release|ARM.ActiveCfg = Release|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.Release|ARM.Build.0 = Release|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.RelWithDebInfo|ARM.ActiveCfg = RelWithDebInfo|ARM
+		{5A288A1F-13C1-3FCE-A6D6-25B9261E5556}.RelWithDebInfo|ARM.Build.0 = RelWithDebInfo|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.Debug|ARM.ActiveCfg = Debug|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.Debug|ARM.Build.0 = Debug|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.MinSizeRel|ARM.ActiveCfg = MinSizeRel|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.MinSizeRel|ARM.Build.0 = MinSizeRel|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.Release|ARM.ActiveCfg = Release|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.Release|ARM.Build.0 = Release|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.RelWithDebInfo|ARM.ActiveCfg = RelWithDebInfo|ARM
+		{374DE35F-02C7-3A25-ADE0-17626DA35CB9}.RelWithDebInfo|ARM.Build.0 = RelWithDebInfo|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.Debug|ARM.Build.0 = Debug|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.MinSizeRel|ARM.ActiveCfg = MinSizeRel|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.MinSizeRel|ARM.Build.0 = MinSizeRel|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.Release|ARM.ActiveCfg = Release|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.Release|ARM.Build.0 = Release|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.RelWithDebInfo|ARM.ActiveCfg = RelWithDebInfo|ARM
+		{3DD82CFA-BE22-3030-A4AD-C53969E3EAAB}.RelWithDebInfo|ARM.Build.0 = RelWithDebInfo|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.Debug|ARM.Build.0 = Debug|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.MinSizeRel|ARM.ActiveCfg = MinSizeRel|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.MinSizeRel|ARM.Build.0 = MinSizeRel|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.Release|ARM.ActiveCfg = Release|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.Release|ARM.Build.0 = Release|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.RelWithDebInfo|ARM.ActiveCfg = RelWithDebInfo|ARM
+		{EC4B730C-1233-3381-9643-74F398CECE68}.RelWithDebInfo|ARM.Build.0 = RelWithDebInfo|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

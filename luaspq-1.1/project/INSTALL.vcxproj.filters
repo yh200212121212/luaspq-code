@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\0\luaspq-1.1\luaspq-1.1\project\CMakeFiles\224d7c36bb734728ebb6d5e6969fcc42\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6B4AF846-8DBC-3DC7-8872-4426432C5147}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
