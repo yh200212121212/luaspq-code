@@ -748,7 +748,7 @@
 #define LUA_RELEASE	LUA_VERSION "." LUA_VERSION_RELEASE
 #define LUA_COPYRIGHT	LUA_RELEASE "  Copyright (C) 1994-2017 Lua.org, PUC-Rio"
 #define LUA_AUTHORS	"R. Ierusalimschy, L. H. de Figueiredo, W. Celes,Q. John"
-
+#define LUA_BUILD  " Build 1009"
 
 /* mark for precompiled code ('<esc>Lua') */
 #define LUA_SIGNATURE	"\x1bLua"

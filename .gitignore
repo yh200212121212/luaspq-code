@@ -6,8 +6,8 @@ luaspq-1.1/project/wluaspq.dir/
 luaspq-1.1/project/Win32/
 luaspq-1.1/project/Release/
 luaspq-1.1/project/Debug/
-!luaspq-1.1/project/Release/asm/
 luaspq-1.1/project/luaspq.sdf
+luaspq-1.1/project/luaspq.opensdf
 luaspq-1.1/project/luaspq.v12.suo
 #x64
 luaspq-1.1/project64/luaspq.dir/
@@ -16,8 +16,8 @@ luaspq-1.1/project64/libluaspq.dir/
 luaspq-1.1/project64/wluaspq.dir/
 luaspq-1.1/project64/Release/
 luaspq-1.1/project64/Debug/
-!luaspq-1.1/project64/Release/asm/
 luaspq-1.1/project64/luaspq.sdf
+luaspq-1.1/project64/luaspq.opensdf
 luaspq-1.1/project64/luaspq.v12.suo
 #arm
 luaspq-1.1/projectarm/luaspq.dir/
@@ -27,4 +27,5 @@ luaspq-1.1/projectarm/wluaspq.dir/
 luaspq-1.1/projectarm/Release/
 luaspq-1.1/projectarm/Debug/
 luaspq-1.1/projectarm/luaspq.sdf
+luaspq-1.1/projectarm/luaspq.opensdf
 luaspq-1.1/projectarm/luaspq.v12.suo

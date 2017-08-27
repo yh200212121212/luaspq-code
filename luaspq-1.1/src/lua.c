@@ -155,6 +155,7 @@ static void deal()
 	fprintf(stdout, __DATE__);
 	fprintf(stdout, " ");
 	fprintf(stdout, __TIME__);
+	fprintf(stdout, LUA_BUILD);
 	fprintf(stdout, "\n");
 }
 /*
